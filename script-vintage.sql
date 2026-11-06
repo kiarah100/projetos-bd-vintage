@@ -62,7 +62,7 @@ CREATE TABLE produtos (
   tendencia varchar(255),
   novidade boolean
   preco_base decimal(10,2) not null
-); 
+);
 
 
 
