@@ -18,9 +18,3 @@ CREATE TABLE conta (
   numero varchar(50) not null,
   saldo decimal(10,2)
 );
-
-CREATE TABLE cliente (
-  id_cliente SERIAL PRIMARY KEY,
-  nome varchar(255) not null,
-  cpf varchar(14) not null
-);
