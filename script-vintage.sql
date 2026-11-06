@@ -39,8 +39,30 @@ CREATE TABLE categoria (
 ); 
 
 CREATE TABLE venda (
-  id_venta SERIAL PRIMARY KEY,
+  id_venda SERIAL PRIMARY KEY,
   data datatime,
   valor_total decimal(10,2) not null,
   origem varchar(255)
 ); 
+
+CREATE TABLE item_venda (
+  id_item_venda SERIAL PRIMARY KEY,
+  quantidade int not null,
+  preco_unitario decimal(10,2) not null
+); 
+
+CREATE TABLE estoque (
+  id_estoque SERIAL PRIMARY KEY,
+  quantidade int
+); 
+
+CREATE TABLE produtos (
+  id_produtos SERIAL PRIMARY KEY,
+  nome varchar(255) not null,
+  tendencia varchar(255),
+  novidade boolean
+  preco_base decimal(10,2) not null
+); 
+
+
+
