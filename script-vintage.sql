@@ -30,4 +30,17 @@ CREATE TABLE pagamento (
   tipo varchar(50) not null,
   valor decimal(10,2) not null,
   status varchar(50)
-);
+); 
+
+CREATE TABLE categoria (
+  id_categoria SERIAL PRIMARY KEY,
+  nome varchar(100) not null,
+  descricao varchar(255)
+); 
+
+CREATE TABLE venda (
+  id_venta SERIAL PRIMARY KEY,
+  data datatime,
+  valor_total decimal(10,2) not null,
+  origem varchar(255)
+); 
