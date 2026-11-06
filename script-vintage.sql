@@ -18,3 +18,16 @@ CREATE TABLE conta (
   numero varchar(50) not null,
   saldo decimal(10,2)
 );
+
+CREATE TABLE cliente (
+  id_cliente SERIAL PRIMARY KEY,
+  nome varchar(255) not null,
+  cpf varchar(14) not null
+);
+
+CREATE TABLE pagamento (
+  id_pagamento SERIAL PRIMARY KEY,
+  tipo varchar(50) not null,
+  valor decimal(10,2) not null,
+  status varchar(50)
+);
